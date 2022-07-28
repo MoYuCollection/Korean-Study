@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+//COLORES
+$negro: #000;
+$blanco1: #ffffff;
+$blanco2: #fff;
+$gris: #7a7a7a;
+$celeste1: #46a2fd;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+body{
+    background: $blanco1;
+
+}
+
+/*Header*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    box-shadow: 0 4px 25px -22px;
+    z-index: 2;
+    background-color: $blanco1;
+}
+ 
+.container__header{
+    max-width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    
+}
+
+.menu nav ul{
+    display: flex;
+}
+
+.menu nav ul li{
+    list-style: none;
+    padding: 0px 20px;
+}
+
+
+.menu nav ul li a{
+    font-size: 18px;
+    color: #777777;
+    transition: color 300ms;
+    
+}
+
+.menu nav ul li a:hover{
+    color: $celeste1;
+}
+
+#icon_menu{
+    display: none;
+}
+    
+
+/*Portada*/
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../img/seul.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container-cover::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 172, 255, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.container-info-cover h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: $blanco1;
+    margin-bottom: 20px;
+}
+
+.container-info-cover p{
+    font-size: 20px;
+    font-weight: 300;
+    color: $blanco1;
+}
+
+/*Articulos*/
+
+ .container-content{
+    width: 1200px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+ }
+
+ article{
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    box-shadow: -10px 0 20px -30px black;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+ }
+
+ article::before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $celeste1;
+ }
+
+ article h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 20px;
+ }
+
+ article p{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #3c3c3c;
+ }
+
+ article img{
+    width: 100%;
+    margin-top: 20px;
+ }
+
+ .explic-img{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0px;
+ }
+
+
+ /*Aside*/
+
+ .container-aside aside{
+    width: 320px;
+    border-radius: 6px;
+    box-shadow: 0 0 20px -20px $negro;
+    overflow: hidden;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+ }
+
+ .container-aside aside img{
+    width: 100%;
+ }
+
+ .container-aside aside h2,
+ .container-aside aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+ }
+ .container-aside aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background: $celeste1;
+    border: none;
+    color: $blanco1;
+    cursor: pointer;
+    border-radius: 6px;
+
+ }
+
+ .container-aside aside button:hover{
+    opacity: 0.9;
+ }
+
+
+/*Footer*/
+
+
+ .footer{
+    width: 100%;
+    padding: 50px,0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.box__footer .logo img{
+    width: 170px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 300;
+    font-size: 18px;
+    color: $gris;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #343434;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: $gris;
+    text-decoration: none;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fa-brands{
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: $gris;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: $gris; 
+}
+
+/*Responsive*/
+
+@media (max-width: 480px){
+
+    .logo img{
+      height: 55px;
+    }
+
+    .container-info-cover p{
+        font-size: 16px;
+
+    }
+
+    .container-aside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aside-title, .aside-p{
+        text-align: center;
+    }
+
+
+    .container-aside aside a button{
+       margin-left: 70px;
+
+    }
+}
+@media (max-width: 1024px){
+
+    .logo{
+        margin-left: 20px;
+    }
+  
+    .container-content{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-aside{
+        display: flex;
+        justify-content: center ;
+    }
+
+    .container-aside aside{
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    #icon_menu{
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        margin-right: 20px;
+    }
+    .menu{ 
+        height: 0px;
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        overflow: hidden;
+        z-index: 10;
+        box-shadow: 0px 0px 30px -20px rgba(0,0,0,0.5);
+        transition: all 300ms;
+    }
+
+    .menu nav ul{
+        padding: 20px 0px;
+        flex-direction: column;
+        background-color: $blanco2;
+    }
+
+    .menu nav ul li{
+        padding: 10px 40px;
+    }
+
+    .mostrar_menu{ /*Manipulado por JS*/
+        height: 235px;
+    }
+
+    article{
+        box-shadow: 0 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1216px){
+    .logo{
+        margin-left: 20px;
+    }
+}
