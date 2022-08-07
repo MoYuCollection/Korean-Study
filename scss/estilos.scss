@@ -7,6 +7,25 @@ $blanco1: #ffffff;
 $blanco2: #fff;
 $gris: #7a7a7a;
 
+//MAP-GET
+$subtitle:(
+    color: black,
+    size: 50px,
+    tamaño: 700
+);
+
+//MIXIN
+@mixin subtitulo{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 40px;
+    
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -200,10 +219,11 @@ main{
 }
 
 .subtitle{
-    font-size: 50px;
-    padding-top: 100px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    color: map-get($subtitle , color);
+    font-size: map-get($subtitle , size);
+    padding-top: 100px;
+    font-weight: map-get($subtitle , tamaño);
 }
 
 
@@ -224,11 +244,19 @@ main{
     border-radius: 10px;
     width: 330px;
     padding: 40px;
+    transition: all 300ms;
     --color-plan: #696871;
     --color-price: #1D293F;
     --bg-cta: #fff;
     --color-cta: #5454D4;
     --color-items: #696871;
+}
+
+.price__element:hover{
+    width: 340px;
+    height: 500px;
+    box-shadow: 0 0 16px  rgb(0 0 0 / 10%)
+
 }
 
 .price__element--best{
@@ -370,12 +398,7 @@ main{
 }
 
 .title_prof{
-    font-size: 50px;
-    font-weight: 700;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    padding-top: 100px;
-    margin-top: 40px;
+    @include subtitulo;
 }
 .card{
     width: 300px;

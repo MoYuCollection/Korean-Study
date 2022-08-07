@@ -7,6 +7,25 @@ $blanco1: #ffffff;
 $blanco2: #fff;
 $gris: #7a7a7a;
 
+//MAP-GET
+$subtitle:(
+    color: black,
+    size: 50px,
+    tamaño: 700
+);
+
+//MIXIN
+@mixin subtitulo{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-top: 100px;
+    margin-top: 40px;
+    
+}
+
+
 *{
     margin: 0;
     padding: 0;

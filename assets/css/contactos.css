@@ -179,32 +179,6 @@ hr {
   background-color: #7a7a7a;
 }
 
-/*Contactanos y preguntas frecuentes*/
-/* .container__contact-questions{
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    margin: auto;
-}
-.form{
-    background-color: #FFF;
-    width: 50%;
-    max-width: 400px;
-}
-.form__container{
-    display: grid;
-    gap: 1em;
-    grid-auto-columns: 100%;
-
-}
-
-.form__title{
-    font-size: 1.9rem;
-}
-
-.form__input{
-    padding: .8em;
-} */
 .questions {
   text-align: center;
 }
