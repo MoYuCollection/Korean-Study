@@ -106,7 +106,7 @@ main {
 #iframe__coder {
   margin-top: -50px;
   padding-left: 25px;
-  width: 1000px;
+  width: 100%;
   height: 450px;
 }
 
@@ -367,8 +367,8 @@ main {
   }
 }
 #iframe__coder {
-  width: 300px;
-  height: 600px;
+  width: 100%;
+  height: 450px;
   margin: auto;
 }
 
@@ -407,7 +407,7 @@ main {
     height: 235px;
   }
   #iframe__coder {
-    width: 500px;
+    width: 100%;
     height: 600px;
     margin: auto;
   }
@@ -447,7 +447,7 @@ main {
     height: 235px;
   }
   #iframe__coder {
-    width: 600px;
+    width: 100%;
     height: 600px;
     margin: auto;
   }
@@ -487,16 +487,15 @@ main {
     height: 235px;
   }
   #iframe__coder {
-    width: 600px;
+    width: 100%;
     height: 600px;
     margin: auto;
   }
 }
 @media (min-width: 1201px) {
   #iframe__coder {
-    width: 1000px;
+    width: 100%;
     height: 600px;
     margin: auto;
-    justify-content: center;
   }
 }
